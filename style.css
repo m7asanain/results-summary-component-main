@@ -1,0 +1,82 @@
+:root {
+  /* primery colors */
+  --light-red: hsl(0, 100%, 67%);
+  --orange-yello: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  /* gradients */
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* neutral */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+html {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.main-box {
+  display: flex; /* Use flexbox to control layout */
+  justify-content: space-between; /* Space between the two child boxes */
+  background-color: #ffffff; /* Set the background color to white */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 5px 5px 10px #888888; /* Add shadow to the right and bottom */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 500px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.child-box {
+  display: inline-block;
+  width: 48%;
+  margin: 1%;
+}
+
+.user-result {
+  color: var(--white);
+  background: rgb(103, 67, 255);
+  background: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%) 0%,
+    hsl(241, 81%, 54%),
+    hsl(241, 81%, 54%) 100%
+  );
+  border-radius: 30px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.your-result {
+  color: rgb(221, 221, 221);
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  background: rgb(60, 58, 180);
+  background: linear-gradient(0deg, rgb(47, 45, 209) 0%, rgb(58, 47, 165) 100%);
+}
